@@ -1,0 +1,49 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Loan Calculator</title>
+  </head>
+  <body>
+    <div class="all-form">
+      <div class="form-container">
+        <h1>Loan Calculator</h1>
+        <form class="form">
+          <div class="span-container">
+            <span class="dollar">$</span>
+            <input type="number" name="number" class="loan-amount" placeholder="Enter Loan Amount" />
+          </div>
+          <div class="span-container">
+            <span class="percentage">%</span>
+            <input type="number" name="number" class="interest-amount" placeholder="Interest" />
+          </div>
+          <div>
+            <input type="number" name="number" class="repay-years" placeholder="Years to repay" />
+          </div>
+          <input type="submit" class="submit" />
+        </form>
+        <div class="rotating-image hidden">
+          <img src="images/loading-buffering.gif" alt="" />
+        </div>
+        <div class="result-container hidden">
+          <h2>Results</h2>
+          <div class="span-container">
+            <span>Monthly Payment</span>
+            <input type="number" name="number" class="monthly-amount" disabled />
+          </div>
+          <div class="span-container">
+            <span>Total Payment</span>
+            <input type="number" name="number" class="total-payment" disabled />
+          </div>
+          <div class="span-container">
+            <span>Total Interest</span>
+            <input type="number" name="number" class="total-interest" disabled />
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

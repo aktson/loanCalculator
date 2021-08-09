@@ -1,0 +1,116 @@
+@import url("https://fonts.googleapis.com/css2?family=Staatliches&display=swap");
+body {
+  min-height: 100vh;
+  background-color: rgba(0, 0, 0, 0.6);
+  background: linear-gradient(45deg, #dbd804, #db5a25);
+  font-family: "Staatliches", cursive;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.span-container {
+  display: grid;
+  grid-template-columns: auto auto;
+  margin: 10px 0px;
+}
+.span-container input {
+  width: 100%;
+  border-bottom-right-radius: 8px;
+  border-top-right-radius: 8px;
+  border-bottom-left-radius: 0px;
+  border-top-left-radius: 0px;
+}
+.dollar,
+.percentage {
+  background-color: #dbd804;
+  border: none;
+  width: 100%;
+  display: inline-block;
+  height: 50px;
+  border-radius: 8px;
+  border-bottom-left-radius: 8px;
+  border-top-left-radius: 8px;
+  border-bottom-right-radius: 0px;
+  border-top-right-radius: 0px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2em;
+}
+input {
+  display: block;
+  width: 100%;
+  padding: 12px;
+  height: 50px;
+  margin-bottom: 10px;
+  border-radius: 8px;
+  font-size: 1.2em;
+  border: none;
+  background-color: rgba(0, 0, 0, 0.1);
+  font-family: "Staatliches", cursive;
+}
+
+.submit {
+  background-color: #db5a25;
+  color: white;
+}
+.all-form {
+  background-color: white;
+  padding: 10px 20px;
+  width: 400px;
+  box-shadow: rgba(235, 180, 180, 0.1);
+}
+h1 {
+  text-align: center;
+}
+h2 {
+  text-align: center;
+  text-decoration: underline;
+  margin-top: 50px;
+  grid-column: 1/-1;
+}
+.hidden {
+  display: none;
+}
+.rotating-image {
+  text-align: center;
+}
+.result-container span {
+  width: 200px;
+  display: block;
+  height: 50px;
+  border-radius: 8px;
+  font-size: 1.3em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.2);
+  border-bottom-right-radius: 0px;
+  border-top-right-radius: 0px;
+  border-bottom-left-radius: 8px;
+  border-top-left-radius: 8px;
+}
+.result-container input {
+  display: block;
+  width: 100%;
+  padding: 12px;
+  height: 50px;
+  margin-bottom: 10px;
+  border-radius: 8px;
+  font-size: 1.2em;
+  border: none;
+  background-color: rgba(0, 0, 0, 0.1);
+  font-family: "Staatliches", cursive;
+  border-bottom-right-radius: 8px;
+  border-top-right-radius: 8px;
+  border-bottom-left-radius: 0px;
+  border-top-left-radius: 0px;
+}
+.error {
+  background-color: rgba(240, 0, 0, 0.5);
+  color: white;
+  padding: 12px;
+  text-align: center;
+}
