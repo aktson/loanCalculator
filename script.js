@@ -23,6 +23,7 @@ let interest = +interestAmountContainer.value;
     totalPaymentContainer.value = Number(loanAmount + +totalInterestContainer.value ) 
     monthlyPaymentContainer.value = Number((+totalPaymentContainer.value / years) / 12 );
    
+    //
     rotatingContainer.classList.remove ("hidden");
     setTimeout(rotatingImageRemove, 1000);
 
@@ -45,6 +46,7 @@ const heading = document.querySelector ("h1");
 formContainer.insertBefore (erroDiv, heading)
 erroDiv.classList.add("error");
 
+// error to disappear automatic after 3 seconds
 setTimeout(clearError,3000);
 
 
@@ -56,6 +58,7 @@ function clearError() {
     document.querySelector(".error").remove();
 }
 
+//function removes rotating image and add calculated result
 
 function rotatingImageRemove () {
    rotatingContainer.classList.add("hidden");
@@ -63,4 +66,3 @@ function rotatingImageRemove () {
    
     
 }
-// resultContainer.classList.remove ("hidden");
